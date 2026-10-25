@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGPU Living Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="webgpu-canvas"></canvas>
+    </div>
+    
+    <div id="info-panel">
+        <h1>WebGPU Living Room</h1>
+        <h2>Navigation</h2>
+        <p>WASD or Arrow Keys: Move around</p>
+        <p>Mouse: Look around</p>
+        <p>Scroll: Zoom in/out</p>
+        <p>Shift: Move faster</p>
+        
+        <h2>Features</h2>
+        <p>• Real-time lighting effects</p>
+        <p>• Interactive furniture</p>
+        <p>• Day/Night cycle</p>
+        <p>• Multi-room environment</p>
+        <p>• Particle effects</p>
+        <p>• Responsive design</p>
+    </div>
+    
+    <div class="room-selector">
+        <select id="room-select">
+            <option value="living">Living Room</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="bedroom">Bedroom</option>
+            <option value="office">Office</option>
+        </select>
+        <button id="change-room-btn">Change Room</button>
+    </div>
+    
+    <div id="controls">
+        Move: WASD/Arrows | Look: Mouse | Zoom: Scroll Wheel | Speed: Shift
+    </div>
+    
+    <div id="stats">
+        FPS: <span id="fps-counter">0</span> | 
+        Objects: <span id="object-counter">0</span> |
+        Room: <span id="room-name">Living Room</span>
+    </div>
+    
+    <div id="loading">
+        <div class="spinner"></div>
+        <div id="loading-text">Initializing WebGPU Living Room...</div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
